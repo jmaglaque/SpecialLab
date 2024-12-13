@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Special Lab</title>
+  <link rel="stylesheet" href="spe.css">
+</head>
+<body>
+  <div class="container">
+    <div class="envelope-wrapper">
+      <div class="envelope">
+        <div class="letter">
+          <div class="text">
+            <strong>Dear Ma'am Roan,</strong>
+            <span class="heart-icon">&#10084;</span> 
+            <p style="text-indent: 10%;">Greetings, Ma'am Roan. First and foremost, I want to express my heartfelt gratitude for the knowledge and wisdom you have imparted to us, as it has greatly contributed to my understanding of concepts that once seemed difficult. Thanks to your guidance, the codes that used to confuse me are now much clearer, and I have developed skills that will undoubtedly benefit my future career. Your teaching approach, where you patiently guide us through the coding process step by step, has been far more engaging and effective than simply reading the lessons. This program has inspired me to pursue Web Development as my major next year, a decision I feel confident about because of the foundation you helped me build. Moreover, your passion for teaching has motivated me to push my limits and strive for excellence, which has led to significant growth in my skills and confidence. I truly admire your dedication and the effort you put into ensuring we learn effectively and meaningfully. Your influence has been a profound part of my college journey, and I am genuinely thankful for the support and inspiration you continue to provide. I pray that you remain blessed in all aspects of your life, Ma’am, and once again, I deeply appreciate all that you have done for us.</p>
+          </div>
+          <div class="you">
+            <strong>Yours truly, <br> Francheska Claire Lopez</br></strong>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button id="viewMessage">View Message</button>
+  </div>
+
+  <script>
+    const envelopeWrapper = document.querySelector('.envelope-wrapper');
+    const letter = document.querySelector('.letter');
+    const viewMessageButton = document.getElementById('viewMessage');
+
+    viewMessageButton.addEventListener('click', () => {
+      envelopeWrapper.classList.toggle('open');
+    });
+  </script>
+</body>
+</html>
